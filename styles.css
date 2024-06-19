@@ -1,0 +1,114 @@
+/*estilo general de la pagina web*/
+body {  
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*Configuracion visual de la barra de navegacion */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*configuracion del logo de la empresa*/
+
+
+
+
+.header h1 {
+    margin: 0;
+}
+
+.navbar ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #0059b3;
+}
+
+.main-content {
+
+    flex: 1;
+    padding: 40px;
+}
+
+
+
+/*cuerpo de la pagina web */
+
+.main-content{
+    flex:1;
+    padding: 20px;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container input[type="text"], .form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.fixed-code {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
