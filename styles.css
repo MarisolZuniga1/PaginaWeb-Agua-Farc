@@ -1,114 +1,182 @@
-/*estilo general de la pagina web*/
-body {  
+/*cuerpo*/
+body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-
-/*Configuracion visual de la barra de navegacion */
-.header {
+/*Encabezado con logo */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #004080;
-    color: #fff;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: white;
 }
 
-/*configuracion del logo de la empresa*/
+.logo {
+    display: flex;
+    align-items: center;
+}
 
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
 
+.nombre-empresa {
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-
-.header h1 {
+nav ul {
+    list-style: none;
     margin: 0;
-}
-
-.navbar ul { 
-    list-style-type: none;
     padding: 0;
-    margin: 0;
     display: flex;
 }
 
-.navbar ul li {
-    margin-left: 20px;
+nav ul li {
+    position: relative;
 }
 
-.navbar ul li a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: white;
     padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #062E57;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #062E57;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+nav ul .submenu li a {
+    padding: 10px 15px;
+}
+
+nav ul .submenu li a:hover,
+nav ul .submenu li a:focus {
+    background-color: #062E57;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    display: block;
+}
+
+/*cuerpo de la pagina web*/
+
+/* configuracion de la imagen */
+.logo-img{
+    width: 65%; /*ajusta el valor de la imagen, a lo que se necesite*/
+    height: auto;
+}
+.img-container{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    height: auto;
 }
 
 
-.navbar ul li a:hover,
-.navbar ul li a.active {
-    background-color: #0059b3;
+/*estetica del formulario*/
+
+.login-container h2{
+    padding:0 0 20px 0;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
 }
 
-.main-content {
-
-    flex: 1;
-    padding: 40px;
-}
-
-
-
-/*cuerpo de la pagina web */
-
-.main-content{
-    flex:1;
+.login-container{
+    width: 600px;
+    background: linear-gradient(150deg, #b8cff1, #92eeb8);
+    border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(206, 96, 32, 0.1);
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
 }
 
+.form-group{
+    padding: 0 40px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.recordar{
+    margin-bottom: 10px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recordar:hover{
+    text-decoration: underline;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.form-group buttom {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius:5px;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form-group button:hover{
+    background-color: #0056b3;
+}
+
+.form-group input{
+    width: 75%;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+    border-radius: 25px;
+    /*padding: 10px;*/
+}
+input[type="submit"]{
+    width: 70%;
+    height: 35px;
+    border: 1pxsolid;
+    background: #062E57;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+/*pie de pagina*/
 footer {
-    background-color: #007BFF;
+    background-color: #062E57;
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-.form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 1em;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.form-container input[type="text"], .form-container input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.form-container input[type="submit"] {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.form-container input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-.fixed-code {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #f1f1f1;
-    color: #333;
-    padding: 10px;
-    border: 1px solid #ddd;
-    z-index: 1000;
 }
