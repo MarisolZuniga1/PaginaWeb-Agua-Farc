@@ -134,7 +134,7 @@ nav ul .submenu li a:focus {
 }
 
 .right {
-    padding: 20px;
+    padding: 40px;
     flex: 2;
 }
 .right p {
@@ -145,13 +145,31 @@ nav ul .submenu li a:focus {
     color: #007bff;
     font-weight: bold;
 }
-.right p.gray {
-    color: #999;
+
+/*links de la pagina*/
+.link a{
+    color: blue;
+    text-decoration: none;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*titulo 3*/
+.main-title {
+    font-size: 1.3em;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    ;
 }
 
 /*texto*/
 .inicio-texto{
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .inicio-texto h2 {
@@ -163,6 +181,18 @@ nav ul .submenu li a:focus {
 .inicio-texto p {
     line-height: 1.6;
 }
+
+/*opciones del video*/
+.responsive-video{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
 
 /*pie de pagina*/
 footer {
