@@ -100,19 +100,58 @@ nav ul .submenu li a:focus {
     height: auto;
 }
 
-/*.section {
-    margin-bottom: 40px;
+/*codigo del cuerpo de la pagina web*/
+.inicio-texto {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    top:20px
+}
+.left {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+.left img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    position: center;
+    top: 20px;
+    left: 20px;
 }
 
-.section h2 {
-    color: #004080;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 10px;
+.right {
+    padding: 40px;
+    flex: 2;
+}
+.right p {
+    margin-bottom: 20px;
+    color: #333;
+}
+.right p.blue {
+    color: #007bff;
+    font-weight: bold;
 }
 
-.section p {
-    line-height: 1.6;
-}*/
+/*links de la pagina*/
+.link a{
+    color: blue;
+    text-decoration: none;
+}
+
+.link a:hover{
+    text-decoration: underline;
+}
+
 
 footer {
     background-color: #062E57;
