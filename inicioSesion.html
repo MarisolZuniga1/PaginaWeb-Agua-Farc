@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EcoAgua-FARC</title>
+        <link rel="stylesheet" href="stylesInicioSesion.css">       
+    </head>
+
+    <body>
+        <!--encabezado de menu-->
+        <header>
+            <!--encabezado con menu-->
+            <div class="logo">
+                <img src="logoPagina.png" alt="Logo de la Empresa">
+                <span class="nombre-empresa">EcoAgua-FARC</span>
+            </div>
+            <!--barra de navegacion de la pagina web-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+    
+                    <li class="menu-item">
+                        <a href="acercaDe.html">Acerca de</a>
+                        <ul class="submenu">
+                            <li><a href="#submenu1">¿Cómo ahorrar agua?</a></li>
+                            <li><a href="#submenu2">Historia</a></li>
+                            <li><a href="#submenu3">problemática</a></li>
+                        </ul>
+                    </li>
+    
+    
+                    <li><a href="proyecto.html">Proyecto</a></li>
+                    <li><a href="implementacion.html">Implementación</a></li>
+    
+                    <li class="menu-item">
+                        <a href="autor.html">Autor</a>
+                        <ul class="submenu">
+                            <li><a href="#submenu4">¿Quién es?</a></li>
+                            <li><a href="#submenu5">¿cómo surgió?</a></li>
+                        </ul>
+                    </li>
+           
+                    <li><a href="#login">Inicio de sesión</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <!--seccion de inicio de sesion-->
+        <section id="login">
+            <h1></h1>
+            <div class="login-wrapper">
+                <div class="login-container">
+                    <h2>Inicio de sesión </h2>
+                    <form action="#">
+
+                        <!--correo de la cuenta utilizada-->
+                        <div  class="form-group">
+                            <label for="email">Correo electrónico: </label>
+                            <input type="text" id="email" name="email" requiered>
+                        </div>
+
+                        <!--contraseña de la cuenta-->
+                        <div class="form-group">
+                            <label for ="password">Contraseña: </label>
+                            <input type="text" id="password" name="password" requiered>
+                        </div>
+
+                        <!--se te olvido la contraseña-->
+                        <div class="recordar">¿Haz olvidado tu contraseña?</div>
+
+                        <!--boton de envio de datos-->
+                        <div class="form-group">
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                        <!--hacer registro-->
+                        <div class="registrarse">
+                            Quiero hacer el <a href="#">Registro</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion de pie de pagina-->
+        <h1></h1>
+        <footer>
+            <p>&copy; 2024 EcoAgua-FARC. Todos los derechos reservados.</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,17 +1,10 @@
-/*cuerpo de la pagina web*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /*background-color: #f4f4f9;*/
-    background-image: url('img/fondo1.jfif');
-    background-size: cover; /* Para que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat;
-
+    background-color: #f4f4f9;
 }
 
-/*encabezado*/
 header {
     display: flex;
     justify-content: space-between;
@@ -97,23 +90,18 @@ nav ul .submenu li a:focus {
 .img-container {
     display: flex;
     justify-content: center;
-    padding: 40px ;
-    margin-top: 20px;
-    top:60%
+    margin-bottom: 20px;
+    padding: 70px 15px;
 }
-/*efecto de imagen*/
-.img-contenedor:hover .imagen 
-{-webkit-transform:scale(1.3);transform:scale(1.3);}
-
 
 .logo-img {
     width: 100%;
-    max-width: 900px;
+    max-width: 800px;
     height: auto;
 }
-/* texto de la pagina*/
-.section {
-    margin-bottom: 10px;
+
+/*.section {
+    margin-bottom: 40px;
 }
 
 .section h2 {
@@ -123,53 +111,9 @@ nav ul .submenu li a:focus {
 }
 
 .section p {
-    line-height: 1.4;
-}
+    line-height: 1.6;
+}*/
 
-/*texto de la pagina web*/
-.section {
-    display: flex;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 95%;
-    margin: auto;
-}
-.left {
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    position: relative;
-}
-.left img {
-    width: 95%;
-    height: auto;
-    object-fit: cover;
-    position: center;
-    top: 20px;
-    left: 20px;
-}
-
-.right {
-    padding: 20px;
-    flex: 2;
-}
-.right p {
-    margin-bottom: 20px;
-    color: #333;
-}
-.right p.blue {
-    color: #007bff;
-    font-weight: bold;
-}
-.right p.gray {
-    color: #999;
-}
-
-/*pie de pagina*/
 footer {
     background-color: #062E57;
     color: white;

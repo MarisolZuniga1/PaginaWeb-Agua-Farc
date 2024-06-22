@@ -3,139 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--titulo y logo de la pestaña de la pagina web-->
     <title>EcoAgua-FARC</title>
-    <!--link para conectarse con el archivo css "styles.cc"-->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <!--encabezado de menu-->
     <header>
-        <!--encabezado con menu-->
         <div class="logo">
             <img src="logoPagina.png" alt="Logo de la Empresa">
             <span class="nombre-empresa">EcoAgua-FARC</span>
         </div>
-        <!--barra de navegacion de la pagina web-->
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-
                 <li class="menu-item">
-                    <a href="#sobre">Acerca de</a>
+                    <a href="acercaDe.html">Acerca de</a>
                     <ul class="submenu">
-                        <li><a href="#sobre">¿Quiénes somos?</a></li>
-                        <li><a href="#sobre">Historia</a></li>
-                        <li><a href="#sobre">problemática</a></li>
+                        <li><a href="#submenu1">¿Cómo ahorrar agua?</a></li>
+                        <li><a href="#submenu2">Historia</a></li>
+                        <li><a href="#submenu3">Problemática</a></li>
                     </ul>
                 </li>
-
-
-                <li><a href="#proyecto">Proyecto</a></li>
-                <li><a href="#implementacion">Implementación</a></li>
-
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="implementacion.html">Problemática</a></li>
                 <li class="menu-item">
-                    <a href="#autor">Autor</a>
+                    <a href="autor.html">Autor</a>
                     <ul class="submenu">
-                        <li><a href="#autor">¿Quién es?</a></li>
-                        <li><a href="#autor">¿cómo surgió?</a></li>
+                        <li><a href="#submenu4">¿Quién es?</a></li>
+                        <li><a href="#submenu5">¿Cómo surgió?</a></li>
                     </ul>
                 </li>
-       
-                <li><a href="#login">Inicio de sesión</a></li>
+                <li><a href="inicioSesion.html">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
-
-    <!--cuerpo de la pagina web-->
     <main class="main-content">
-        
-        <h1></h1>
         <div class="img-container">
-            <img width="100%"  src="img/portada.png" class="logo-img">
+            <img src="img/portadaNormal.jpeg" class="logo-img" alt="Imagen de portada">
         </div>
-        <h1></h1>
 
-        <!--seccion de inicio-->
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Bienvenidos a EcoAgua-FARC, un proyecto dedicado a la conservación del agua en la comunidad de Hacienda del Jardín II.</p>
-        </section>
-    
-        <!--seccion "sobre"-->
-        <section id="sobre">
-            <h2>Sobre EcoAgua-FARC</h2>
-            <p>EcoAgua-FARC es una iniciativa que busca educar y movilizar a la comunidad en torno a la importancia de conservar el agua.</p>
-        </section>
-        
-        <!--seccion de proyecto-->
-        <section id="proyecto">
-            <h2>Acerca del Proyecto</h2>
-            <h3>Historia del Proyecto</h3>
-            <p>[Agrega aquí la historia de cómo surgió el proyecto]</p>
-            <h3>Videos</h3>
-            <video width="320" height="240" controls>
-                <source src="tu-video.mp4" type="video/mp4">
-            </video>
-        </section>
-        
-        <!--seccion de implementacion-->
-        <section id="implementacion">
-            <h2>Implementación del Proyecto</h2>
-            <p>Este proyecto será implementado en la comunidad de Hacienda del Jardín II y se expandirá a otras áreas en el futuro.</p>
-        </section>
-        
-
-        <!--seccion de autor-->
-        <section id="autor">
-            <h2>Acerca del Autor</h2>
-            <p>[Agrega aquí información sobre ti]</p>
-        </section>
-        
-        <!--seccion de inicio de sesion-->
-        <section id="login">
-            <div class="login-wrapper">
-                <div class="login-container">
-                    <h2>Inicio de sesión </h2>
-                    <form action="#">
-
-                        <!--correo de la cuenta utilizada-->
-                        <div  class="form-group">
-                            <label for="email">Correo electrónico: </label>
-                            <input type="text" id="email" name="email" requiered>
-                        </div>
-
-                        <!--contraseña de la cuenta-->
-                        <div class="form-group">
-                            <label for ="password">Contraseña: </label>
-                            <input type="text" id="password" name="password" requiered>
-                        </div>
-
-                        <!--se te olvido la contraseña-->
-                        <div class="recordar">¿Haz olvidado tu contraseña?</div>
-
-                        <!--boton de envio de datos-->
-                        <div class="form-group">
-                            <input type="submit" value="Enviar">
-                        </div>
-
-                        <!--hacer registro-->
-                        <div class="registrarse">
-                            Quiero hacer el <a href="#">Registro</a>
-                        </div>
-
-                    </form>
+        <!--cuerpo de la pagina web-->
+        <section id="inicio" class="section">
+            <div class="left">
+                <img src="img/ImagenInicio.png" class="logo-img" alt="Imagen de inicio">
+                </div>
+                <div class="right">
+                    <h2>EcoAgua-Farc</h2>
+                    <p>Es un proyecto ambiental enfocado a la promoción del ahorro y la conservación del agua en el fraccionamiento Hacienda del Jardín II (y en un futuro llegar a más comunidades). En una situación de mucha preocupación por la escasez de agua y los efectos del cambio climático que han estado ocurriendo a menudo en estos últimos años, nuestra misión es informar, educar a la comunidad para adoptar prácticas responsables y sostenibles en el uso del agua. A través de esta plataforma, buscamos crear conciencia sobre la importancia de este recurso vital y ofrecer herramientas prácticas para su gestión eficiente.</p>
+                    
+                    <h2>Objetivo</h2>
+                    <p>En Eco Agua-Farc nuestro objetivo principal nace de la preocupación por el impacto de la escasez de agua y la sequía que se ha generado los últimos años, pero principalmente en este año 2024. EcoAgua-Farc busca la conservación del medio ambiente a través del ahorro de agua utilizando medidas nuevas como la implementación de páginas web informativas, buscar concienciar y promover prácticas de ahorro de agua para garantizar un mejor futuro para próximas generaciones. Queremos tener un mayor impacto en el Fraccionamiento Hacienda del Jardín II, ya que aún no se concientiza la comunidad, que es una comunidad que desperdicia mucha agua.</p>
                 </div>
             </div>
         </section>
-    
+        
 
-        <!--seccion de pie de pagina-->
-         <h1></h1>
-        <footer>
-            <p>&copy; 2024 EcoAgua-FARC. Todos los derechos reservados.</p>
-        </footer>
+    </main>
 
-        </main>
-    </body>
+    <footer>
+        <p>&copy; 2024 EcoAgua-FARC. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
