@@ -2,7 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    /*background-color: #f4f4f9;*/
+    background-image: url('img/fondo1.jfif');
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
 }
 
 header {
@@ -54,7 +58,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #062E57;
+    background-color: #30659b;
 }
 
 nav ul .submenu {
@@ -62,7 +66,7 @@ nav ul .submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #062E57;
+    background-color: #004080;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -75,7 +79,7 @@ nav ul .submenu li a {
 
 nav ul .submenu li a:hover,
 nav ul .submenu li a:focus {
-    background-color: #062E57;
+    background-color: #30659b;
 }
 
 .menu-item:hover .submenu,
@@ -100,20 +104,67 @@ nav ul .submenu li a:focus {
     height: auto;
 }
 
-/*.section {
+/*texto de la pagina web */
+.inicio-texto {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto;
+    margin-top: 90px;
+    top:20px
+}
+.left {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+.left img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    position: center;
+    top: 20px;
+    left: 20px;
+}
+
+.right {
+    padding: 20px;
+    flex: 2;
+}
+.right p {
+    margin-bottom: 20px;
+    color: #333;
+}
+.right p.blue {
+    color: #007bff;
+    font-weight: bold;
+}
+.right p.gray {
+    color: #999;
+}
+
+/*texto*/
+.inicio-texto{
     margin-bottom: 40px;
 }
 
-.section h2 {
+.inicio-texto h2 {
     color: #004080;
     border-bottom: 2px solid #004080;
     padding-bottom: 10px;
 }
 
-.section p {
+.inicio-texto p {
     line-height: 1.6;
-}*/
+}
 
+/*pie de pagina*/
 footer {
     background-color: #062E57;
     color: white;

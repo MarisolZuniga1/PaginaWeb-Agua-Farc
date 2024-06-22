@@ -11,7 +11,7 @@ body {
 
 }
 
-/*encabezado*/
+/*encabezado*/ 
 header {
     display: flex;
     justify-content: space-between;
@@ -61,15 +61,16 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color: #062E57;
+    background-color: #30659b;
 }
 
 nav ul .submenu {
+    display: block;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #062E57;
+    background-color: #004080;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -82,7 +83,7 @@ nav ul .submenu li a {
 
 nav ul .submenu li a:hover,
 nav ul .submenu li a:focus {
-    background-color: #062E57;
+    background-color: #30659b;
 }
 
 .menu-item:hover .submenu,
