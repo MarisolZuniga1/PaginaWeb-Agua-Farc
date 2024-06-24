@@ -121,7 +121,7 @@ nav ul .submenu li a:focus {
     position: relative;
 }
 .left img {
-    width: 95%;
+    width: 85%;
     height: auto;
     object-fit: cover;
     position: center;
